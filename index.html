@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FSM Şirketi | IHA & SIHA Çözümleri</title>
+    <meta
+      name="description"
+      content="FSM Şirketi için kurumsal web sitesi: IHA ve SIHA odaklı teknoloji, üretim ve operasyon çözümleri."
+    />
+    <style>
+      :root {
+        --bg: #0b1220;
+        --card: #111b31;
+        --text: #e5ecf9;
+        --muted: #a8b6d5;
+        --primary: #3b82f6;
+        --primary-soft: #60a5fa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #0b1220 0%, #0f1a31 100%);
+        line-height: 1.6;
+      }
+
+      .container {
+        width: min(1100px, 92%);
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(8px);
+        background: rgba(11, 18, 32, 0.85);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+      }
+
+      .logo {
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+
+      .menu {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .menu a {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+
+      .menu a:hover {
+        color: var(--text);
+      }
+
+      .hero {
+        padding: 80px 0 56px;
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(1.9rem, 4vw, 3rem);
+      }
+
+      .hero p {
+        color: var(--muted);
+        max-width: 700px;
+      }
+
+      .cta {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 12px 20px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      section {
+        padding: 28px 0;
+      }
+
+      h2 {
+        margin-top: 0;
+        font-size: 1.6rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 18px;
+      }
+
+      .card h3 {
+        margin-top: 0;
+      }
+
+      .kpi {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--primary-soft);
+      }
+
+      footer {
+        margin-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        color: var(--muted);
+      }
+
+      footer .container {
+        padding: 20px 0 28px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">FSM Şirketi</div>
+          <div class="menu">
+            <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#cozumler">Çözümler</a>
+            <a href="#iha-siha">IHA & SIHA</a>
+            <a href="#iletisim">İletişim</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Geleceğin Savunma ve Havacılık Teknolojilerini Tasarlıyoruz</h1>
+          <p>
+            FSM Şirketi; mühendislik, üretim ve saha operasyonlarını bir araya getirerek kurumsal ölçekte
+            güvenilir IHA ve SIHA çözümleri geliştirir.
+          </p>
+          <a class="cta" href="#iletisim">Teklif Al</a>
+        </div>
+      </section>
+
+      <section id="hakkimizda">
+        <div class="container">
+          <h2>Hakkımızda</h2>
+          <p>
+            Çok disiplinli ekibimiz; aviyonik sistemler, görev bilgisayarı yazılımları ve veri analitiği
+            alanlarında güçlü uzmanlıkla çalışır. Kurumsal projelerde uçtan uca tasarım, entegrasyon ve bakım
+            hizmeti sunarız.
+          </p>
+        </div>
+      </section>
+
+      <section id="cozumler">
+        <div class="container">
+          <h2>Kurumsal Çözümler</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Platform Geliştirme</h3>
+              <p>İhtiyaca özel hava aracı gövdesi, elektronik mimari ve görev yükü entegrasyonu.</p>
+            </article>
+            <article class="card">
+              <h3>Yer Kontrol Sistemleri</h3>
+              <p>Operasyonel görünürlük sağlayan kullanıcı dostu komuta-kontrol yazılımları.</p>
+            </article>
+            <article class="card">
+              <h3>Bakım & Destek</h3>
+              <p>Planlı bakım, yedek parça yönetimi ve 7/24 teknik destek hizmetleri.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="iha-siha">
+        <div class="container">
+          <h2>IHA & SIHA Odak Alanları</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Keşif ve Gözetleme</h3>
+              <p>Uzun menzilli görevler için gerçek zamanlı görüntü aktarımı ve hedef takibi.</p>
+            </article>
+            <article class="card">
+              <h3>Akıllı Otonomi</h3>
+              <p>Rota optimizasyonu, görev planlama ve güvenli uçuş için gelişmiş yazılım altyapısı.</p>
+            </article>
+            <article class="card">
+              <h3>Operasyonel Verimlilik</h3>
+              <p>Eğitim, simülasyon ve operasyon sonrası analiz ile sürdürülebilir saha performansı.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Öne Çıkan Veriler</h2>
+          <div class="grid">
+            <div class="card"><div class="kpi">12+</div><p>Yıllık sektörel deneyim</p></div>
+            <div class="card"><div class="kpi">50+</div><p>Tamamlanan kurumsal proje</p></div>
+            <div class="card"><div class="kpi">24/7</div><p>Teknik destek kapasitesi</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="iletisim">
+        <div class="container">
+          <h2>İletişim</h2>
+          <div class="card">
+            <p><strong>FSM Şirketi Genel Merkez</strong></p>
+            <p>E-posta: info@fsmsirketi.com</p>
+            <p>Telefon: +90 (212) 000 00 00</p>
+            <p>Adres: İstanbul / Türkiye</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 FSM Şirketi. Tüm hakları saklıdır.</div>
+    </footer>
+  </body>
+</html>
